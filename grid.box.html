@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutカズちゃま</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        main {
+            display: grid;
+            grid-template-rows:1fr 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr;
+            margin: auto;
+            width: 1000px;
+            height: 1000px; 
+        }
+
+        #box {
+            margin: 10px;
+            border-radius: 20px;
+            /*text-align: center;
+            /*vertical-align:center;*/
+            display: grid;
+            place-items: center;
+            background-size: cover;
+            
+        }
+
+        #box1 {
+            background:rgba(255, 255, 255,0.5);
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+            font-family: 'Yomogi', cursive;
+            font-weight: 700;
+            color: black;
+        }
+        
+        .blue-box {
+            grid-area: 1/1/2/4;
+            /*background-color: blue;*/
+            background-image:url("20211015_134811.jpg");
+        }
+
+        .yellow-box {
+            grid-area:2/2/3/3 ;
+            background-color:yellow;
+            background-image: url("kazuyama.photo.jpg");
+        }
+
+        .green-box {
+            grid-area: 2/1/4/2;
+            /*background-color: green;*/
+            background-image: url("20211031_133925.jpg");
+        }
+
+        .pink-box {
+            /*background-color: pink;*/
+            grid-area:3/2/4/4;
+            background-image: url("20211113_141726.jpg");
+        }
+
+        .purple-box {
+            /*background-color: purple;*/
+            grid-area: auto;
+            background-image: url("DSC_0113.JPG");
+            background-position: center
+        }
+        @media (max-width:450px) {
+            * {
+            box-sizing: border-box;
+            text-decoration: none;
+            }
+            main {
+                width:auto;
+                height: 550px;
+            }
+        }
+        @media (min-width:450px) and (max-width:930px) {
+            * {
+            box-sizing: border-box;
+            text-decoration: none;
+            }
+            main {
+                width:auto;
+                height:95vh;
+            }
+            .blue-box,.pink-box {
+                background-position: center;
+            }
+          }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="https://goo.gl/maps/urcTYBy1jJQPbc8DA" class="blue-box" id="box"><div id="box1">猪苗代湖</div></a>
+        <a href="https://kazutyama.github.io/music/html.music/index.html" class="yellow-box" id="box"><div id="box1">かずちゃま</div></a>
+        <a href="https://goo.gl/maps/r1AuTs5B8sLD7uGZA" class="green-box" id="box"><div id="box1">面白山</div></a>
+        <a href="https://goo.gl/maps/KyFpcT5GqJxLj6Av6" class="pink-box" id="box"><div id="box1">成沢城</div></a>
+        <a href="https://goo.gl/maps/SjxVKiYL3KRCDQ1JA" class="purple-box" id="box"><div id="box1">熊野岳</div></a>
+    </main>
+</body>
+</html>

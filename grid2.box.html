@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutカズちゃま</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        main {
+            display: grid;
+            grid-template-rows:1fr 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr;
+            margin: auto;
+            width: 950px;
+            height: 950px; 
+            border:black solid 8px ;
+        }
+
+        .box {
+            /*margin: 10px;*/
+           /*border-radius: 20px;*/
+            /*text-align: center;
+            /*vertical-align:center;*/
+            display: grid;
+            place-items: center;
+            background-size: cover;
+        }
+
+        #box1 {
+            background:rgba(255, 255, 255,0.5);
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+            font-family: 'Yomogi', cursive;
+            font-weight: 700;
+            color: black;
+            
+        }
+        /*色*/
+        /*color-dodge  hard-light luminosity multiply*/
+        
+        .blue {
+            grid-area: 1/1/2/4;
+            background-image:url("20211015_134811.jpg");
+            background-color:rgba(0, 24, 161, 0.9);
+            background-blend-mode:color-dodge ;
+            border-bottom: black solid 8px;
+            transition: 1s ;
+        }
+
+        .blue:hover {
+            background-color:transparent;
+            background-blend-mode:hard-light;
+            border: black 20px solid;
+        }
+
+        .yellow {
+            grid-area:2/2/3/3 ;
+            background-color:rgba(129, 120, 0, 0.658);
+            background-blend-mode:color-dodge ;
+            background-image: url("kazuyama.photo.jpg");
+            transition: 1s ;
+        }
+
+        .yellow:hover {
+            background-color:transparent;
+            background-blend-mode:hard-light;
+            border: black 20px solid;
+        }
+
+        .green {
+            grid-area: 2/1/4/2;
+            /*background-color: green;*/
+            background-color:rgb(28, 105, 4);
+            background-blend-mode:color-dodge ;
+            background-image: url("20211031_133925.jpg");
+            border-right: black solid 8px;
+            transition: 1s ;
+        }
+
+        .green:hover {
+            background-color:transparent;
+            background-blend-mode:hard-light;
+            border: black 20px solid;
+        }
+
+        .pink {
+            /*background-color: pink;*/
+            grid-area:3/2/4/4;
+            background-color:rgba(185, 49, 113, 0.87);
+            background-blend-mode:color-dodge ;
+            background-image: url("20211113_141726.jpg");
+            border-top: black solid 8px;
+            transition: 1s ;
+        }
+
+        .pink:hover {
+            background-color:transparent;
+            background-blend-mode:hard-light;
+            border: black 20px solid;
+        }
+
+        .purple {
+            /*background-color: purple;*/
+            grid-area: auto;
+            background-color:rgba(34, 16, 138, 0.959);
+            background-blend-mode:color-dodge ;
+            background-image: url("DSC_0113.JPG");
+            /*background-position: center;*/
+            border-left: black solid 8px;
+            transition: 1s ;
+        }
+
+        .purple:hover {
+            background-color:transparent;
+            background-blend-mode:hard-light;
+            border: black 20px solid;
+            background-position: center;
+        }
+
+        @media (max-width:450px) {
+            * {
+            box-sizing: border-box;
+            }
+            main {
+                width:auto;
+                height: 550px;
+            }
+        }
+        @media (min-width:450px) and (max-width:930px) {
+            * {
+            box-sizing: border-box;
+            text-decoration: none;
+            }
+            main {
+                width:auto;
+                height:95vh;
+            }
+            .blue,.pink,.yellow,.purple,.green,.pink {
+                background-position: center;
+            }
+
+            
+          }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="https://goo.gl/maps/urcTYBy1jJQPbc8DA" class="blue box" ><div id="box1">猪苗代湖</div></a>
+        <a href="https://kazutyama.github.io/music/html.music/index.html" class="yellow box"><div id="box1">かずちゃま</div></a>
+        <a href="https://goo.gl/maps/r1AuTs5B8sLD7uGZA" class="green box"><div id="box1">面白山</div></a>
+        <a href="https://goo.gl/maps/KyFpcT5GqJxLj6Av6" class="pink box"><div id="box1">成沢城</div></a>
+        <a href="https://goo.gl/maps/SjxVKiYL3KRCDQ1JA" class="purple box"><div id="box1">熊野岳</div></a>
+    </main>
+</body>
+</html>
